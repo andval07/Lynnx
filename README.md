@@ -4,7 +4,7 @@ Visual SLAM for RGB-D cameras, written from scratch in C++17 with Eigen and Open
 It runs on a CPU (about 9 ms per frame on a laptop) and is evaluated on the TUM RGB-D
 benchmark with evo.
 
-Each part is implemented in the repo: the SE(3) math, PnP, bundle adjustment, bag of
+Everything is in the repo: the SE(3) math, PnP, bundle adjustment, bag of
 words and the pose graph. I developed it with AI assistance and checked every module
 with unit tests and the TUM benchmark. OpenCV only reads the images, extracts and matches ORB features and
 undistorts the keypoints. Everything else is built on top of Eigen.
@@ -178,7 +178,7 @@ Evaluated with `scripts/evaluate.py --scale` (Sim(3) alignment). ATE RMSE in cm:
 
 No lost frames on the three sequences. RGB-D numbers include loop closure.
 
-## Limitations
+## Limits
 
 - Monocular mode (`--mono`) has no loop closure and no scale correction. The
   scale drifts; on fr1/desk the max error is 91.9 cm. No stereo mode.
