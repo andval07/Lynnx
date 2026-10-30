@@ -4,7 +4,7 @@ Visual SLAM for RGB-D cameras, written from scratch in C++17 with Eigen and Open
 It runs on a CPU (about 9 ms per frame on a laptop) and is evaluated on the TUM RGB-D
 benchmark with evo.
 
-Everything is in the repo: the SE(3) math, PnP, bundle adjustment, bag of
+Everything is in this repo: the SE(3) math, PnP, bundle adjustment, bag of
 words and the pose graph. I developed it with AI assistance and checked every module
 with unit tests and the TUM benchmark. OpenCV only reads the images, extracts and matches ORB features and
 undistorts the keypoints. Everything else is built on top of Eigen.
