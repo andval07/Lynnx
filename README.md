@@ -1,4 +1,4 @@
-# lynx
+# Lynnx
 
 Visual SLAM for RGB-D cameras, written from scratch in C++17 with Eigen and OpenCV.
 It runs on a CPU (about 9 ms per frame on a laptop) and is evaluated on the TUM RGB-D
